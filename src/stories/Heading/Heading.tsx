@@ -1,7 +1,10 @@
 import React from 'react';
-// import './SpinnerStyles.css';
+import './HeadingStyles.css';
 
 export interface HeadingProps{
+    color?:string;
+    fontSize?:number;
+    background?:string;
 //     /** Width of the spinner */
 // width:string;
 //     /** Height of the spinner */
@@ -17,10 +20,10 @@ export interface HeadingProps{
 
 }
 
-export const Heading =({}:HeadingProps)=>{
+export const Heading =({color,fontSize,background,...props}:HeadingProps)=>{
     return (
         // <div className="pos-center">
-        <div>Heading</div>
+        <div {...props} className='headingStyles' style={{color,fontSize,background}}>Heading</div>
     //   </div>
     )
 }
