@@ -3,7 +3,7 @@ import './button.css';
 
 interface ButtonProps {
   primary?: boolean;
-  backgroundColor?: string;
+  // backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
   label: string;
   onClick?: () => void;
@@ -15,7 +15,7 @@ interface ButtonProps {
 export const Button = ({
   primary = false,
   size = 'medium',
-  backgroundColor,
+  // backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
@@ -24,7 +24,7 @@ export const Button = ({
     <button
       type="button"
       className={['-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      // style={{ backgroundColor }}
       {...props}
     >storybook
       {label}
