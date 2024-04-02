@@ -1,0 +1,61 @@
+/* LeftNavBar.css */
+
+.left-nav-container {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+}
+
+.left-nav-container.open {
+    left: 0;
+}
+
+.left-nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-nav-bar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.left-nav-bar ul li:last-child {
+    border-bottom: none;
+}
+
+.left-nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.left-nav-bar ul li a:hover {
+    background-color: #555;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 3px;
+    left: 168px;
+    background-color: transparent;
+    border: none;
+    /* color: white; */
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.text-styles {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-content: normal;
+    align-items: center;
+    font-size: 40px;
+}
