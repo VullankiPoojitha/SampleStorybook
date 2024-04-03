@@ -1,0 +1,10 @@
+.inputstyles{
+    padding: 5px;
+    border: 1px solid gray;
+    font-size: 14px;
+    width:200px;   
+}
+
+.inputstyles:focus {
+    border: none;
+}
