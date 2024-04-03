@@ -23,7 +23,7 @@ export interface InputProps extends HTMLAttributes<HTMLInputElement>{
     /** Input value */
     value?: any;
 }
-export const  InputText =({children,size='medium',fontSize='16px', placeholderText='',border='1px solid gray',borderRadius='8px',value='',onChange,...props}:InputProps) => {
+export const  InputText =({children,size='medium',fontSize='16px', placeholderText='Enter Text',border='1px solid gray',borderRadius='8px',value='',onChange,...props}:InputProps) => {
     const [inputValue, setInputValue] = useState('')
 const handleChange =(e:React.ChangeEvent<HTMLInputElement>)=>{
     onChange(e);
@@ -40,7 +40,7 @@ setInputValue(value);
 },[value])
 
     return(
-        <input {...props} style={{padding:size ==='medium' ? '10px': size === 'large' ? '15px' :size === 'small' ? '5px' : '', 
+        <input type='text' {...props} style={{padding:size ==='medium' ? '10px': size === 'large' ? '15px' :size === 'small' ? '5px' : '', 
         borderRadius:borderRadius,cursor:'pointer', border:border, fontSize:fontSize}} 
         placeholder={placeholderText} value={inputValue} onChange={handleChange} />
     )

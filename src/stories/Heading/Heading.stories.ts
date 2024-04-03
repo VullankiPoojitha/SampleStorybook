@@ -6,7 +6,7 @@ const meta:Meta<HeadingProps>={
     component:Heading,
     tags:['autodocs'],
 argTypes:{
-    background:{control:'color'}
+    // background:{control:'color'}
     },
 }satisfies Meta<typeof Heading>
 
